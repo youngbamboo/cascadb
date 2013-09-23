@@ -111,6 +111,7 @@ public:
     bool readUInt16(uint16_t* v) { return readUInt(v); }
     bool readUInt32(uint32_t* v) { return readUInt(v); }
     bool readUInt64(uint64_t* v) { return readUInt(v); }
+    bool readUInt64(size_t* v) {return readUInt(v);}
     bool readSlice(Slice & s);
     
 protected:
